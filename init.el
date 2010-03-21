@@ -61,6 +61,7 @@
 (require 'starter-kit-ruby)
 (require 'starter-kit-js)
 
+
 (regen-autoloads)
 (load custom-file 'noerror)
 
@@ -76,3 +77,4 @@
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
 ;;; init.el ends here
+

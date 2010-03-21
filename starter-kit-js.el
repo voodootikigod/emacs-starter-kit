@@ -11,6 +11,14 @@
 (add-hook 'espresso-mode-hook 'idle-highlight)
 (setq espresso-indent-level 2)
 
+
+
+(autoload 'coffee-mode "coffee" "Start coffee-mode" t)
+(add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+(add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+
+
+
 ;; If you prefer js2-mode, use this instead:
 ;; (add-to-list 'auto-mode-alist '("\\.js$" . espresso-mode))
 
